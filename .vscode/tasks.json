@@ -1,0 +1,30 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Build Raylib C",
+      "type": "shell",
+      "command": "gcc",
+      "args": [
+        "main.c",
+        "-o",
+        "jogo",
+        "-Iraylib/include",
+        "-Lraylib/lib",
+        "-lraylib",
+        "-lopengl32",
+        "-lgdi32",
+        "-lwinmm"
+      ],
+      "options": {
+        "env": {
+          "PATH": "C:/Users/Lucas/Downloads/Nova pasta/raylib/w64devkit/bin;${env:PATH}"
+        }
+      },
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    }
+  ]
+}
