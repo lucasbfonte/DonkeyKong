@@ -6,15 +6,16 @@
       "type": "shell",
       "command": "gcc",
       "args": [
-        "main.c",
-        "-o",
-        "jogo",
+        "Mapa1.c",
         "-Iraylib/include",
         "-Lraylib/lib",
         "-lraylib",
         "-lopengl32",
         "-lgdi32",
-        "-lwinmm"
+        "-lwinmm",
+        "-lm",
+        "-o",
+        "jogo.exe"
       ],
       "options": {
         "env": {
